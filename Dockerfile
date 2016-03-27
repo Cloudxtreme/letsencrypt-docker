@@ -8,5 +8,9 @@ RUN git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 
 VOLUME /etc/letsencrypt /var/lib/letsencrypt
 
+WORKDIR /opt/letsencrypt
+
+RUN ./letsencrypt-auto
+
 EXPOSE 443
 
