@@ -10,7 +10,5 @@ VOLUME /etc/letsencrypt /var/lib/letsencrypt
 
 WORKDIR /opt/letsencrypt
 
-RUN ./letsencrypt-auto
-
 EXPOSE 443
 
